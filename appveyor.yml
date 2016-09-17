@@ -1,0 +1,9 @@
+build: off
+
+test_script:
+- ps: $core_version = (dotnet --version)
+- ps: if($core_version -ne '1.0.0-preview2-003131') { throw; }
+- ps: md myapp; cd myapp
+- ps: $core_new_app = (dotnet new)
+- ps: $core_new_app
+- ps: cd..
