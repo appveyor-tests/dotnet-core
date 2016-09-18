@@ -4,9 +4,4 @@ environment:
 build: off
 
 test_script:
-- ps: $core_version = (dotnet --version)
-- ps: if($core_version -ne $env:dotnetcore_version) { throw "Expected .NET Core: $env:dotnetcore_version, actual: $core_version"; }
-- ps: md myapp; cd myapp
-- ps: $core_new_app = (dotnet new)
-- ps: if($core_new_app -ne "Created new C# project in $env:appveyor_build_folder\myapp.") { throw '.NET Core installation must be pre-cached.'; }
-- ps: cd..
+- ps: .\test.ps1
