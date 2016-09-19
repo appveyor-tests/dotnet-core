@@ -1,7 +1,15 @@
 environment:
   dotnetcore_version: 1.0.0-preview2-003131
 
-build: off
-
-test_script:
-- ps: .\test.ps1
+before_build:
+- ps: .\check-dotnet-core.ps1
+  
+build_script:
+- cd WebAppDotNetCore100
+- dotnet restore
+- msbuild
+- cd ..
+- cd WebAppDotNetCore101
+- dotnet restore
+- msbuild
+- cd ..
