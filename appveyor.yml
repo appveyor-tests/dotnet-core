@@ -15,6 +15,11 @@ build_script:
 - msbuild
 - cd ..
 
+- cd WebAppDotNetCore103
+- dotnet restore
+- msbuild
+- cd ..
+
 - cd WebAppDotNetCore110
 - dotnet restore
 - msbuild
