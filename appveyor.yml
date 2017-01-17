@@ -6,3 +6,5 @@ before_build:
   
 build_script:
 - test.cmd
+
+test: off
