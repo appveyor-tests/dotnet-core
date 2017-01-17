@@ -1,0 +1,6 @@
+{
+  "projects": [ "DspAdpcm", "DspAdpcm.Cli", "DspAdpcm.Tests", "DspAdpcm.Benchmark" ],
+  "sdk": {
+    "version": "1.0.0-preview2-003156"
+  }
+}

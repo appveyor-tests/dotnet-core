@@ -5,22 +5,4 @@ before_build:
 - ps: .\check-dotnet-core.ps1
   
 build_script:
-- cd WebAppDotNetCore100
-- dotnet restore
-- msbuild
-- cd ..
-
-- cd WebAppDotNetCore101
-- dotnet restore
-- msbuild
-- cd ..
-
-- cd WebAppDotNetCore103
-- dotnet restore
-- msbuild
-- cd ..
-
-- cd WebAppDotNetCore110
-- dotnet restore
-- msbuild
-- cd ..
+- test.cmd
