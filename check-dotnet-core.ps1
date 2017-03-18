@@ -10,6 +10,9 @@ $core_new_app
 #if($core_new_app -ne "Created new C# project in $env:appveyor_build_folder\myapp.") { throw '.NET Core installation must be pre-cached.'; }
 cd..
 
+(Get-ChildItem 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App')
+(Get-ChildItem 'C:\Program Files\dotnet\sdk')
+
 $netCoreRuntime = (Get-ChildItem 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App')
 if($netCoreRuntime.Length -ne 5) { throw 'Wrong number of .NET Core runtimes installed' }
 if($netCoreRuntime[0].Name -ne '1.0.0') { throw '.NET Core 1.0.0 not found'}
