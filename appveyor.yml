@@ -1,5 +1,5 @@
 environment:
-  dotnetcore_version: 1.0.1
+  dotnetcore_version: 1.0.4
 
 before_build:
 - ps: .\check-dotnet-core.ps1
