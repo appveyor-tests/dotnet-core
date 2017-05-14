@@ -14,14 +14,15 @@ cd..
 (Get-ChildItem 'C:\Program Files\dotnet\sdk')
 
 $netCoreRuntime = (Get-ChildItem 'C:\Program Files\dotnet\shared\Microsoft.NETCore.App')
-if($netCoreRuntime.Length -ne 7) { throw 'Wrong number of .NET Core runtimes installed' }
+if($netCoreRuntime.Length -ne 8) { throw 'Wrong number of .NET Core runtimes installed' }
 if($netCoreRuntime[0].Name -ne '1.0.0') { throw '.NET Core 1.0.0 not found'}
 if($netCoreRuntime[1].Name -ne '1.0.1') { throw '.NET Core 1.0.1 not found'}
 if($netCoreRuntime[2].Name -ne '1.0.3') { throw '.NET Core 1.0.3 not found'}
 if($netCoreRuntime[3].Name -ne '1.0.4') { throw '.NET Core 1.0.4 not found'}
-if($netCoreRuntime[4].Name -ne '1.1.0') { throw '.NET Core 1.1.0 not found'}
-if($netCoreRuntime[5].Name -ne '1.1.1') { throw '.NET Core 1.1.1 not found'}
-if($netCoreRuntime[6].Name -ne '1.1.2') { throw '.NET Core 1.1.2 not found'}
+if($netCoreRuntime[4].Name -ne '1.0.5') { throw '.NET Core 1.0.5 not found'}
+if($netCoreRuntime[5].Name -ne '1.1.0') { throw '.NET Core 1.1.0 not found'}
+if($netCoreRuntime[6].Name -ne '1.1.1') { throw '.NET Core 1.1.1 not found'}
+if($netCoreRuntime[7].Name -ne '1.1.2') { throw '.NET Core 1.1.2 not found'}
 
 $netCoreSDK = (Get-ChildItem 'C:\Program Files\dotnet\sdk')
 if($netCoreSDK.Length -ne 6) { throw 'Wrong number of .NET Core SDKs installed' }
