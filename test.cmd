@@ -33,3 +33,9 @@ dotnet restore
 dotnet build
 dotnet test
 cd..
+
+cd dotnet-core-1.1.2-sdk-1.0.4
+dotnet restore
+dotnet build
+dotnet test
+cd..
