@@ -8,6 +8,7 @@ init:
 
 test_script:
 - ps: $result = (cmd /c dotnet new console)
+- ps: $result
 - ps: if ($result[1] -eq 'Welcome to .NET Core!') { throw "Welcome to .NET Core message found!" }
 - ps: .\check-dotnet-core.ps1
 - test.cmd
