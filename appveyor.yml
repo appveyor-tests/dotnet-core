@@ -1,10 +1,10 @@
 environment:
   dotnetcore_version: 2.0.0
 
-before_build:
+test_script:
+- ps: $result = (cmd /c dotnet new console)
+- ps: if ($result[1] -eq 'Welcome to .NET Core!') { throw "Welcome to .NET Core message found!" }
 - ps: .\check-dotnet-core.ps1
-  
-build_script:
 - test.cmd
 
-test: off
+build: off
