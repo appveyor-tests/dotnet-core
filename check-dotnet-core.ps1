@@ -57,7 +57,6 @@ if($env:isVs2017 -ne 'true') {
   if($netCoreSDK[7].Name -ne '2.0.3') { throw '.NET Core SDK 2.0.3 not found'}
   if($netCoreSDK[8].Name -ne '2.1.101') { throw '.NET Core SDK 2.1.101 not found'}
   if($netCoreSDK[9].Name -ne '2.1.4') { throw '.NET Core SDK 2.1.4 not found'}
-  if($netCoreSDK[10].Name -ne '2.1.4') { throw '.NET Core SDK 2.1.4 not found'}
 } else {
   # VS 2017
   if($netCoreSDK.Length -ne 13) { throw 'Wrong number of .NET Core SDKs installed' }
