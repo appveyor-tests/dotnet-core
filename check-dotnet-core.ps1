@@ -79,7 +79,7 @@ if($env:isVs2017 -ne 'true') {
   if($netCoreSDK[10].Name -ne '2.1.103') { throw '.NET Core SDK 2.1.103 not found'}
   if($netCoreSDK[11].Name -ne '2.1.104') { throw '.NET Core SDK 2.1.104 not found'}
   if($netCoreSDK[12].Name -ne '2.1.105') { throw '.NET Core SDK 2.1.105 not found'}
-  if($netCoreSDK[13].Name -ne '2.1.200') { throw '.NET Core SDK 2.1.200 not found'}
-  if($netCoreSDK[14].Name -ne '2.1.2') { throw '.NET Core SDK 2.1.2 not found'}
+  if($netCoreSDK[13].Name -ne '2.1.2') { throw '.NET Core SDK 2.1.2 not found'}
+  if($netCoreSDK[14].Name -ne '2.1.200') { throw '.NET Core SDK 2.1.200 not found'}
   if($netCoreSDK[15].Name -ne '2.1.4') { throw '.NET Core SDK 2.1.4 not found'}
 }
