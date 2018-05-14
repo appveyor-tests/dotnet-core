@@ -1,10 +1,9 @@
 environment:
-  dotnetcore_version: 2.1.105
+  dotnetcore_version: 2.1.200
 
 init:
 - ps: $env:isVs2017 = 'false'
 - ps: if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community") { $env:isVs2017 = 'true' }
-- ps: if ($env:isVs2017 -eq 'true') { $env:dotnetcore_version = '2.1.105' }
 
 test_script:
 - ps: $result = (cmd /c dotnet new console)
