@@ -1,5 +1,5 @@
 environment:
-  dotnetcore_version: 2.1.200
+  dotnetcore_version: 2.1.300
 
 init:
 - ps: $env:isVs2017 = 'false'
