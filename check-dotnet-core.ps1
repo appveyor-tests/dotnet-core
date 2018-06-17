@@ -68,7 +68,7 @@ if($env:isVs2017 -ne 'true') {
   if($netCoreSDK[14].Name -ne '2.1.4') { throw '.NET Core SDK 2.1.4 not found'}
 } else {
   # VS 2017
-  if($netCoreSDK.Length -ne 18) { throw 'Wrong number of .NET Core SDKs installed' }
+  if($netCoreSDK.Length -ne 19) { throw 'Wrong number of .NET Core SDKs installed' }
   if($netCoreSDK[0].Name -ne '1.0.1') { throw '.NET Core SDK 1.0.1 not found'}
   if($netCoreSDK[1].Name -ne '1.0.2') { throw '.NET Core SDK 1.0.2 not found'}
   if($netCoreSDK[2].Name -ne '1.0.3') { throw '.NET Core SDK 1.0.3 not found'}
@@ -84,6 +84,7 @@ if($env:isVs2017 -ne 'true') {
   if($netCoreSDK[12].Name -ne '2.1.105') { throw '.NET Core SDK 2.1.105 not found'}
   if($netCoreSDK[13].Name -ne '2.1.2') { throw '.NET Core SDK 2.1.2 not found'}
   if($netCoreSDK[14].Name -ne '2.1.200') { throw '.NET Core SDK 2.1.200 not found'}
-  if($netCoreSDK[15].Name -ne '2.1.300') { throw '.NET Core SDK 2.1.300 not found'}
-  if($netCoreSDK[16].Name -ne '2.1.4') { throw '.NET Core SDK 2.1.4 not found'}
+  if($netCoreSDK[15].Name -ne '2.1.201') { throw '.NET Core SDK 2.1.201 not found'}
+  if($netCoreSDK[16].Name -ne '2.1.300') { throw '.NET Core SDK 2.1.300 not found'}
+  if($netCoreSDK[17].Name -ne '2.1.4') { throw '.NET Core SDK 2.1.4 not found'}
 }
