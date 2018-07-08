@@ -36,7 +36,7 @@ $dotnet_sdks = @{
   '1.0.2'   = @{ vs2017 = $true }
   '1.0.3'   = @{ vs2017 = $true }
   '1.0.4'   = @{ vs2015 = $true; vs2017 = $true }
-  '1.1.0'   = @{ vs2015 = $true; vs2017 = $true }
+  '1.1.0'   = @{ vs2017 = $true }
   '2.0.0'   = @{ vs2015 = $true; vs2017 = $true }
   '2.0.2'   = @{ vs2017 = $true }
   '2.0.3'   = @{ vs2015 = $true; vs2017 = $true }
