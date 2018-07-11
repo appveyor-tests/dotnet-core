@@ -26,6 +26,7 @@ $dotnet_runtimes = @{
   '2.0.7' = @{ vs2015 = $true; vs2017 = $true }
   '2.1.0' = @{ vs2015 = $true; vs2017 = $true }
   '2.1.1' = @{ vs2015 = $true; vs2017 = $true }
+  '2.1.2' = @{ vs2015 = $true; vs2017 = $true }
 }
 
 $dotnet_sdks = @{
@@ -52,6 +53,7 @@ $dotnet_sdks = @{
   '2.1.201' = @{ vs2017 = $true }
   '2.1.300' = @{ vs2015 = $true; vs2017 = $true }
   '2.1.301' = @{ vs2015 = $true; vs2017 = $true }
+  '2.1.302' = @{ vs2015 = $true; vs2017 = $true }
 }
 
 # check runtimes
