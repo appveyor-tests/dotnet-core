@@ -30,7 +30,7 @@ $dotnet_runtimes = @{
   '2.1.3' = @{ vs2015 = $true; vs2017 = $true }
   '2.1.4' = @{ vs2015 = $true; vs2017 = $true }
   '2.1.5' = @{ vs2015 = $true; vs2017 = $true }
-  '2.1.6' = @{ vs2015 = $true; vs2017 = $true }
+  '2.1.6' = @{ vs2015 = $false; vs2017 = $true }
   '2.1.7' = @{ vs2015 = $true; vs2017 = $true }
   '2.2.0' = @{ vs2015 = $false; vs2017 = $true }
   '2.2.1' = @{ vs2015 = $true; vs2017 = $true }
