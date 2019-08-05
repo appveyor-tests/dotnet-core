@@ -1,3 +1,4 @@
+$env:dotnetcore_version = '2.2.301'
 $env:isVs2017 = 'false'
 if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community") { $env:isVs2017 = 'true' }
 $result = (cmd /c dotnet new console)
