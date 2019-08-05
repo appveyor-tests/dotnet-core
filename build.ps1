@@ -5,4 +5,5 @@ $result = (cmd /c dotnet new console)
 $result
 if ($result[1] -eq 'Welcome to .NET Core!') { throw "Welcome to .NET Core message found!" }
 .\check-dotnet-core.ps1
-test.cmd
+cmd.exe /c "test.cmd"
+if ($LastExitCode -ne 0) {$host.SetShouldExit($LastExitCode)}
