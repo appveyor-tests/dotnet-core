@@ -14,7 +14,11 @@ $dotnet_sdks = @(
 
 if ($env:vs_version -eq 'vs2017') {
   $dotnet_sdks = @(
-    ''
+  '1.0.4'
+  '1.1.14'
+  '2.0.3'
+  '2.1.803'
+  '2.2.402'
   )
 } elseif ($env:vs_version -eq 'vs2015') {
   $dotnet_sdks = @(
