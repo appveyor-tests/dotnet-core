@@ -34,7 +34,7 @@ foreach($dotnet_sdk in $dotnet_sdks) {
     Set-Content -Path "$projectPath\global.json" -Value "{`"sdk`": {`"version`": `"$sdkVersion`"}}"
     Push-Location -Path $projectPath
     $result = (& $env:ProgramFiles\dotnet\dotnet.exe new console) -join "`n"
-    $result.contains('Welcome to .NET Core!') {
+    if ($result.contains('Welcome to .NET Core!')) {
       throw ".NET Core is not warmed up!"
     }
     Pop-Location
