@@ -1,5 +1,5 @@
 environment:
-  dotnetcore_version: %EXPECTED_DOTNET_VER%
+  dotnetcore_version: '%EXPECTED_DOTNET_VER%'
 
 init:
 - ps: $env:vs_version = 'vs2015'
