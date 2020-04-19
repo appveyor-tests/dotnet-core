@@ -22,7 +22,7 @@ if ($env:vs_version -eq 'vs2017') {
   )
 }
 
-foreach($dotnet_sdk in $dotnet_sdks) {
+foreach($sdkVersion in $dotnet_sdks) {
     if (-not (Test-Path "$env:ProgramFiles\dotnet\sdk\$sdkVersion")) {
         throw ".NET Core SDK $sdkVersion is not installed"
     } else {
