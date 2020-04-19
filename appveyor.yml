@@ -2,14 +2,14 @@ environment:
   dotnetcore_version: %EXPECTED_DOTNET_VER%
 
 init:
-- ps: $env:isVs2017 = 'false'
-- ps: if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community") { $env:isVs2017 = 'true' }
+- ps: $env:vs_version = 'vs2015'
+- ps: if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community") { $env:vs_version = 'vs2017' }
+- ps: if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community") { $env:vs_version = 'vs2019' }
 
 test_script:
 - ps: $result = (cmd /c dotnet new console)
 - ps: $result
 - ps: if ($result[1] -eq 'Welcome to .NET Core!') { throw "Welcome to .NET Core message found!" }
 - ps: .\check-dotnet-core.ps1
-- test.cmd
 
 build: off
