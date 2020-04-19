@@ -40,7 +40,5 @@ foreach($sdkVersion in $dotnet_sdks) {
     }
     Pop-Location
     Remove-Item $projectPath -Force -Recurse
-    Write-Host "Installed .NET Core SDK $sdkVersion" -ForegroundColor Green
+    Write-Host ".NET Core SDK $sdkVersion is good!" -ForegroundColor Green
 }
-
-Write-Host ".NET Core runtimes and SDKs are good" -ForegroundColor Green
