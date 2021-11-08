@@ -5,6 +5,7 @@ init:
 - ps: $env:vs_version = 'vs2015'
 - ps: if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community") { $env:vs_version = 'vs2017' }
 - ps: if (test-path "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community") { $env:vs_version = 'vs2019' }
+- ps: if (test-path "C:\Program Files\Microsoft Visual Studio\2022\Community") { $env:vs_version = 'vs2022' }
 
 test_script:
 - ps: $result = (cmd /c dotnet new console)
