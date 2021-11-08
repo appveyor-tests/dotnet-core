@@ -4,7 +4,18 @@ $core_version = (dotnet --version)
 Write-Host "Installed .NET Core: $core_version"
 if($core_version -ne $env:dotnetcore_version) { throw "Expected .NET Core: $env:dotnetcore_version, actual: $core_version"; }
 
+# 2022
 $dotnet_sdks = @(
+  '2.2.402'
+  '3.0.103'
+  '3.1.202'
+  '3.1.414'
+  '5.0.402'
+  '6.0.100-rc.2.21505.57'
+)
+
+if ($env:vs_version -eq 'vs2019') {
+  $dotnet_sdks = @(
   '1.1.14'
   '2.1.202'
   '2.1.806'
@@ -13,9 +24,8 @@ $dotnet_sdks = @(
   '3.1.202'
   '3.1.414'
   '5.0.402'
-)
-
-if ($env:vs_version -eq 'vs2017') {
+  )
+} elseif ($env:vs_version -eq 'vs2017') {
   $dotnet_sdks = @(
   '1.0.4'
   '1.1.14'
