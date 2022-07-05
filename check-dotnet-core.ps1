@@ -1,5 +1,3 @@
-Get-ChildItem "C:\Program Files\dotnet\sdk"
-
 $core_version = (dotnet --version)
 Write-Host "Installed .NET Core: $core_version"
 if($core_version -ne $env:dotnetcore_version) { throw "Expected .NET Core: $env:dotnetcore_version, actual: $core_version"; }
