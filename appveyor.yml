@@ -8,6 +8,8 @@ init:
 - ps: if (test-path "C:\Program Files\Microsoft Visual Studio\2022\Community") { $env:vs_version = 'vs2022' }
 
 test_script:
+- dotnet --list-sdks
+- dotnet --list-runtimes
 - ps: $result = (cmd /c dotnet new console)
 - ps: $result
 - ps: if ($result[1] -eq 'Welcome to .NET Core!') { throw "Welcome to .NET Core message found!" }
