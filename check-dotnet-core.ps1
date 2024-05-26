@@ -6,7 +6,7 @@ if($core_version -ne $env:dotnetcore_version) { throw "Expected .NET Core: $env:
 $dotnet_sdks = @(
 
   #'3.0.103'
-  '3.1.202'
+  #'3.1.202'
   '3.1.426'
   '5.0.408'
   '6.0.422'
