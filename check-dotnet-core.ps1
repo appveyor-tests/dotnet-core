@@ -24,6 +24,7 @@ if ($env:vs_version -eq 'vs2019') {
   '3.1.426'
   '7.0.410'
   '8.0.401'
+  '9.0.100'
   )
 } elseif ($env:vs_version -eq 'vs2017') {
   $dotnet_sdks = @(
