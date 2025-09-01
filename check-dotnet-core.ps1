@@ -4,19 +4,17 @@ if($core_version -ne $env:dotnetcore_version) { throw "Expected .NET Core: $env:
 
 # 2022
 $dotnet_sdks = @(
-  '3.1.426'
   '6.0.425'
   '7.0.410'
-  '8.0.401'
-  '9.0.101'
+  '8.0.413'
+  '9.0.304'
 )
 
 if ($env:vs_version -eq 'vs2019') {
   $dotnet_sdks = @(
-  '3.1.426'
   '7.0.410'
-  '8.0.401'
-  '9.0.101'
+  '8.0.413'
+  '9.0.304'
   )
 } elseif ($env:vs_version -eq 'vs2017') {
   $dotnet_sdks = @(
