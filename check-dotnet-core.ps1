@@ -6,8 +6,8 @@ if($core_version -ne $env:dotnetcore_version) { throw "Expected .NET Core: $env:
 $dotnet_sdks = @(
   '6.0.425'
   '7.0.410'
-  '8.0.413'
-  '9.0.304'
+  '8.0.415'
+  '9.0.306'
 )
 
 if ($env:vs_version -eq 'vs2019') {
