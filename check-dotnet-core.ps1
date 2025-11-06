@@ -13,8 +13,8 @@ $dotnet_sdks = @(
 if ($env:vs_version -eq 'vs2019') {
   $dotnet_sdks = @(
   '7.0.410'
-  '8.0.413'
-  '9.0.304'
+  '8.0.415'
+  '9.0.306'
   )
 } elseif ($env:vs_version -eq 'vs2017') {
   $dotnet_sdks = @(
